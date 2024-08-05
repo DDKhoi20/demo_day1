@@ -9,6 +9,5 @@ public class Main {
         HelloWorld hello = (HelloWorld) applicationContext.getBean("helloBean");
 
         System.out.println(hello.toString());
-        System.out.println(hello.toString());
     }
 }
