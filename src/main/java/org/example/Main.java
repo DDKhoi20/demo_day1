@@ -1,14 +1,13 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hi");
-        System.out.printf("Hi");
-        System.out.printf("Hi");
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
+        HelloWorld hello = (HelloWorld) applicationContext.getBean("helloBean");
+
+        System.out.println(hello.toString());
     }
 }
