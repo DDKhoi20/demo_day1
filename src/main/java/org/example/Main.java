@@ -10,6 +10,5 @@ public class Main {
 
         System.out.println(hello.toString());
         System.out.println(hello.toString());
-        System.out.println(hello.toString());
     }
 }
